@@ -27,7 +27,7 @@ github:
   repo:              https://nifty10m.github.io/devsquad/
 
 # Gems
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-gist
 
