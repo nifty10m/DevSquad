@@ -9,6 +9,7 @@ baseurl:             "/devsquad"
 
 pages_list:
    About: '/devsquad/about'
+   Imprint: 'https://10m.de/imprint'
    Feed: '/devsquad/atom.xml'
 
 # Assets
