@@ -30,7 +30,7 @@ To see your this site just start a local jekyll server:
 $ jekyll serve
 ```
 
-Open <http://localhost:4000> in your browser, and voilà.
+Open <http://localhost:4000/devsquad/> in your browser, and voilà.
 
 ### Poole
 
