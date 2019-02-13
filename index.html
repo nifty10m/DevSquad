@@ -19,7 +19,7 @@ title: Home of the devsquad team
   {% endfor %}
 </div>
 
-<h2>Lastest posts</h2>
+<h2>Latest posts</h2>
 <ul>
 {% for post in site.posts %}
    <li>{{ post.date | date_to_string }}  <a href="{{post.url | prepend:site.baseurl }}">{{ post.title }}</a></li>
