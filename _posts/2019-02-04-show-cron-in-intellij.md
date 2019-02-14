@@ -3,8 +3,8 @@ layout: post
 title: Display help text for CRON in IntelliJ 
 ---
 
-Although [cron](https://en.wikipedia.org/wiki/Cron) is originated in the unix world, it is a very common to describe althogh scheduled java task using a cron expression. As a typical programmer I am not that good
-at remembering those expressions and their meaning. Luckyly there is a small IntelliJ plugin which shows some nice tooltip.
+Although [cron](https://en.wikipedia.org/wiki/Cron) is originated in the unix world, it is a very common in programming environments. As a typical programmer cron jobs are not my daily business and I am not that good
+in remembering those expressions and their meaning. Luckily there is a small IntelliJ plugin which shows the expression as a e tooltip.
 
 So instead of the pure expression you get a human readable text as tooltip
 ![Screenshot IntelliJ](/devsquad/public/img/screenshot-cron-intellij.png)
