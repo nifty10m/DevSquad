@@ -8,7 +8,7 @@ Therefore you are able to create custom Live Templates and even Surrounding Live
 
 ![Create Surround Live Template](/devsquad/public/img/live_templates.gif)
 
-The available Variables and further documentation can be found here: 
+The available variables and further documentation can be found here: 
 <a href="https://www.jetbrains.com/help/idea/template-variables.html#pdtv" target="_blank">https://www.jetbrains.com/help/idea/template-variables.html#pdtv</a>
 
 {% include twitter.html %}
