@@ -16,10 +16,10 @@ We do out very best to provide solutions for day to day problems. All solutions 
 
 ### Install dependencies
 
-Github pages are built on Jekyll and uses its built-in SCSS compiler to generate our CSS. Before getting started, you'll need to install the Jekyll gem:
+Github pages are built on Jekyll and uses its built-in SCSS compiler to generate our CSS. Before getting started, you'll need to install the required gems from the gemfile:
 
 ```bash
-$ gem install jekyll
+$ bundle
 ```
 
 ### Running locally
@@ -29,6 +29,14 @@ To see your this site just start a local jekyll server:
 ```bash
 $ jekyll serve
 ```
+
+or 
+```bash
+$ bundle exec jekyll serve
+```
+
+when you have required gems in conflicting versions used in other projects.
+
 
 Open <http://localhost:4000/devsquad/> in your browser, and voilà.
 
