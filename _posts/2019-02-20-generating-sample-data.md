@@ -3,7 +3,7 @@ layout: post
 title: Generating sample data in Java applications
 ---
 
-When writing code most usecases or requirements have a very limited amount of sample and testdata. When writing test cases or creating a technical this is a problem, cause to get a real impression about how your application looks you need realistic test data. In most cases after using _Foo_ and _Bar_ or the infamous _Alice_ and _Bob_ I am not the creative. 
+When writing code most usecases or requirements have a very limited amount of sample and testdata. When writing test cases or creating a technical demo this is a problem, cause to get a real impression about how your application looks you need realistic test data. In most cases after I use _Foo_ and _Bar_ or the infamous _Alice_ and _Bob_ cause I am not the creative. 
 
 If I need more testdata I have found [jfairy](https://github.com/Devskiller/jfairy)
 
