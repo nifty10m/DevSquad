@@ -5,12 +5,12 @@ permalink:           none
 title:               10M DevSquad
 tagline:             Code and more
 paginate:            1
-baseurl:             "/devsquad"
+baseurl:             ""
 
 pages_list:
-   About: '/devsquad/about'
+   About: '/about'
    Imprint: 'https://10m.de/imprint'
-   Feed: '/devsquad/atom.xml'
+   Feed: '/atom.xml'
 
 # Assets
 #
