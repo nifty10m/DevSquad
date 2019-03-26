@@ -3,21 +3,18 @@ layout: post
 title: Turning GatsbyJS websites into PWAs
 ---
 
-During the process of our company redesign we reimplemented our new [website](https://10m.de) with [GatsbyJS](https://www.gatsbyjs.org/).
+During the process of our company redesign we reimplemented our [website](https://10m.de) with [GatsbyJS](https://www.gatsbyjs.org/).
 Despite generating super fast websites Gatsby has a pretty neat plugin system which enables you to add common features such das sitemaps or RSS feeds
 to your site by simply adding and configuring a plugin.
 
 Since our Software Innovation team is focussing on the PWA (Progressive Web App) technology right now, we enhanced our website with some neat PWA features as well.
 And with GatsbyJS they basically come for free!
 
-## Going Offline
-In germany we have a bad mobile network coverage compared to other countries, thus it is important for your website to load even in regions without internet. 
-This can be achieved by having to load only small amounts of data or even no data.
-With Gatsby this is pretty simple to achieve. Out of the box it splits your website into small bundles which are only downloaded when needed.
+# PWA essentials
 
-And then there is the `gatsby-plugin-offline` package which can be dropped into your website to make your site work offline automatically.
-Under the hood this plugin installs a service worker in the client's browser which essentially caches all the visited pages of your website such
-that it can be shown to the user on future visits while fetching a newer version in the background. Therefor a user can get important information from your website without 
-even having an internet connection.
+* HTTPS
+* Service Worker
+* Web App Manifest
+* Responsive Design
 
 {% include twitter.html %}
