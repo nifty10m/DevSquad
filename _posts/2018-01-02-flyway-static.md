@@ -3,12 +3,7 @@ layout: post
 title: Flyway only once per testrun
 ---
 
-
-<div class="message">
-  The first blog post in the jekyll environment
-</div>
-
-We use [flyway]() in our setup for creating the database. When running our test suite with `@SpringBootTest` Spring Boot try reusing of the application test. This is not possible if a test suite is annotaded with a dedicated port. In this case Spring Boot is starting a new application context.
+We use [flyway](https://flywaydb.org/) in our setup for creating the database. When running our test suite with `@SpringBootTest` Spring Boot try reusing of the application test. This is not possible if a test suite is annotaded with a dedicated port. In this case Spring Boot is starting a new application context.
 
 Within out startup we are resetting the database by dropping all tables. This requires, due database constraints, the dropping and reinstallation of the flyway extension.
 ``` java
