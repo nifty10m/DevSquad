@@ -117,6 +117,6 @@ Web components have inputs and outputs (events) much like any other framework bu
 accept strings. Which means you can pass in types that can be cast to string or can be deserialized from JSON at most.
 Also reacting to changes of input values is rather tedious to setup since you have to create a separate listener for each attribute you want to react on.
 
-All in all I would recommend using web components for simple leaf nodes (e.g. buttons, inputs, etc.) or certain layout components (e.g. a bootstrap grid system).
+All together I would recommend using web components for simple leaf nodes (e.g. buttons, inputs, etc.) or certain layout components (e.g. a bootstrap grid system).
 
 {% include twitter.html %}
