@@ -105,7 +105,7 @@ And some additional benefits because they are used in the web:
 * Accessibility (by extending default HTML elements)
 
 Interoperability is especially important, since this allows you easy brand consistency. Create your corporate components library or design system as web components
-and all your teams can work off the same base no matter which framework they use. This will also directly reflect in higher development speed because
+and all teams can work on the same base no matter which framework they use. This will also directly reflect in higher development speed because
 the components don't have to be implemented for each framework over and over again.
 Lastly web components is a browser standard added by the W3C which means it uses core features of each browser.
 
