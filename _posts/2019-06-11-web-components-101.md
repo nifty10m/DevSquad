@@ -27,6 +27,9 @@ So with web components you can create custom reusable html elements much like th
 
 ## How can I create a web component
 
+Web components can be created with all major web frameworks and vanilla JS, for simplicity sake
+let's define a simple button web component with vanilla JS:
+
 ```javascript
 // template for your element
 const template = document.createElement('template');
@@ -65,7 +68,27 @@ class MyButton extends HTMLButtonElement {
 customElements.define('my-button', MyButton);
 ```
 
-TODO: elaborate
+You start by creating the component's markdown inside an html template. The `<slot>` tag is used for content projection. You can include as many slots as you want but don't forget to assign names to them.
+
+Then you create your component javascript class which extends `HTMLButtonElement` for inheriting the accessibility features from a standard button. The class comes with one of the four possible life cycle hooks `connectedCallback` which is invoked when your element is first connected to the document's DOM. This is also the place where you create a root element for the shadow DOM and insert the custom button template.
+
+Other possible callbacks you can use
+* **disconnectedCallback:** is invoked when the custom element is disconnected from the document's DOM
+* **adoptedCallback:** is invoked when the custom element is moved to a new document. (rarely used)
+* **attributeChangedCallback:** is invoked when one of the element's attributes is added, removed, or changed.
+
+In order to get the `attributeChangedCallback` to fire you have to define the attributes you want to observe by adding a static getter to the class.
+
+```
+class MyButton extends HTMLButtonElement {
+  static get observedAttributes() {
+    return ['width', 'height'];
+  }
+}
+```
+
+Lastly you have to register your web component with customElements global object by calling `customElements.define()`. The define method expects a class extending HTMLElement and a tag name containing at least one dash for namespacing your element.
+And that is your first web component done!
 
 ## Why should I create/use web components?
 
