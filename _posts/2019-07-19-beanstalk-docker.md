@@ -3,15 +3,15 @@ layout: post
 title: How-To ship your Java-Application using Docker on AWS Elastic Beanstalk with Gradle and Gitlab-Ci
 ---
 
-When running Applications on Beanstalk you are limited to the supported "Plattforms" (see [Supported AWS Plattforms](https://docs.aws.amazon.com/de_de/elasticbeanstalk/latest/dg/concepts.platforms.html)). 
+When running Applications on Beanstalk you are limited to the supported "platforms" (see [Supported AWS Plattforms](https://docs.aws.amazon.com/de_de/elasticbeanstalk/latest/dg/concepts.platforms.html)). 
 At the time beeing, your Java Applications are capped to JDK-8. 
 
 While we are currently at JDK-12 and JDK-13 announced to be released in the end of 2019, we needed to find a way to deploy and run JDK-8+ Applications on AWS.
 
 The first solution which came to our minds was to build Docker-Images / -Containers and ship them via [AWS-ECS](https://docs.aws.amazon.com/de_de/AmazonECS/latest/developerguide/Welcome.html). 
 
-Sounds simple, but it's a real Pain to configure those Environments and even provide a stable and shared persistence Layer. We tried to get this running and aborted about 2 days later. 
-Our next approach was to run a Docker-Image using the Elastic-Beanstalk Environment and we got this running in like 4 Hours which was a pleasantly surprise, how easy and intuitive it was.
+Sounds simple, but it's a real pain to configure those environments and even provide a stable and shared persistence layer. We tried to get this running and aborted about 2 days later. 
+Our next approach was to run a Docker-Image using the Elastic-Beanstalk Environment and we got this running in about 4 hours which was a pleasant surprise, how easy and intuitive it was.
 
 So here's a small How-To ship your Application using Docker on AWS Elastic Beanstalk with Gradle and Gitlab-Ci
 
