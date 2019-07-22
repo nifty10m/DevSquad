@@ -106,7 +106,7 @@ To deploy your application to Beanstalk, you have to describe, where Beanstalk f
   ]
 }
 ```
-We wrote a Gradle goal, which generates the Dockerrun.aws.json with the correct Tag (Version). To simplify the How-To let's say we tagged the Image with Version 0.0.1
+We wrote a Gradle task, which generates the Dockerrun.aws.json with the correct Ttg (Version). To simplify this How-To let's say we tagged the image with Version 0.0.1
 
 ## Deploy your Dockerrun.aws.json
 
