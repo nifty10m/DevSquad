@@ -6,7 +6,7 @@ title: How-To ship your Java-Application using Docker on AWS Elastic Beanstalk w
 When running Applications on Beanstalk you are limited to the supported "platforms" (see [Supported AWS Plattforms](https://docs.aws.amazon.com/de_de/elasticbeanstalk/latest/dg/concepts.platforms.html)). 
 At the time beeing, your Java Applications are capped to JDK-8. 
 
-While we are currently at JDK-12 and JDK-13 announced to be released in the end of 2019, we needed to find a way to deploy and run JDK-8+ Applications on AWS.
+While the current long time release of java is 11 and currently at JDK-12 is available and JDK-13 announced to be released in the end of 2019, we needed to find a way to deploy and run JDK-8+ Applications on AWS.
 
 The first solution which came to our minds was to build Docker-Images / -Containers and ship them via [AWS-ECS](https://docs.aws.amazon.com/de_de/AmazonECS/latest/developerguide/Welcome.html). 
 
