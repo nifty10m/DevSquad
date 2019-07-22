@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-To ship your Java-Application using Docker on AWS Elastic Beanstalk with Gradle and Gitlab-Ci
+title: How-To run your Java 11 Application on AWS Elastic Beanstalk using Docker
 ---
 
 When running Applications on Beanstalk you are limited to the supported "platforms" (see [Supported AWS Plattforms](https://docs.aws.amazon.com/de_de/elasticbeanstalk/latest/dg/concepts.platforms.html)). 
