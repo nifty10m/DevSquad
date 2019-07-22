@@ -20,7 +20,7 @@ So here's a small How-To ship your Application using Docker on AWS Elastic Beans
 * An executable Jar-File which launches your Application (e.g. a Spring-Boot-Application)
 
 # Create a Dockerfile of your Application
-We thought it would be a good idea to start with JDK-11 due to the fact, that there are several good Base-Docker-Images available. 
+We thought it would be a good idea to start with JDK-11 due to the fact, this is a long time release and there are several base images available. 
 
 ```$xslt
 FROM openjdk:11-alpine
