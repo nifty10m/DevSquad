@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Flyway and after Migrate
-author-name: Jörg Herbst
-author-avatar: joe
+author: joe
 author-jobtitle: Database Agitator
 ---
 

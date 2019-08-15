@@ -8,13 +8,16 @@ title: Home of the devsquad team
   <article class="post">
     <h1 class="post-title">{{ post.title }}</h1>
     <div class="post-subtitle">
+
       <div class="avatar">
-        <img class="image" src="/public/img/avatar/{{ post.author-avatar }}.png" alt="avatar {{ post.author }}">
+        {% assign staff_member = site.members | where: 'abbrev', post.author | first %}
+        <img class="image" src="/public/img/avatar/{{ staff_member.abbrev }}.png" alt="avatar {{ staff_member.abbrev }}">
         <div>
-          <div class="name">{{ post.author-name }}</div>
-          <div class="title">{{ post.author-jobtitle }}</div>
+          <div class="name">{{ staff_member.name }}</div>
+          <div class="title"><a href="https://github.com/{{ staff_member.github }}">@{{ staff_member.github }}</a> {{ post.author-jobtitle }}</div>
         </div>
       </div>
+
       <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
     </div>
     {{ post.content }}

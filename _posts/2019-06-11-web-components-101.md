@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Web Components 101
-author-name: Sven Röttering
-author-avatar: sro
+author: sro
 author-jobtitle: UI / UX Mentor
 ---
 
