@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Solution for common javascript problems 
+author-name: Jörg Herbst
+author-avatar: joe
+author-jobtitle: JS Enthusiast
 ---
 
 A lot of functionally is availble in JavaScript or within our angular based repositories. But sometimes as an unexperienced developer I am looking for howtos but do not want to add an npm dependency. The 

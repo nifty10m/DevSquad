@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Flyway and after Migrate
+author-name: Jörg Herbst
+author-avatar: joe
+author-jobtitle: Database Agitator
 ---
 
 When automating deployment you have to use a tool for automated database migration. We have good experience using [Flyway](https://flywaydb.org) which we use also in our Spring Boot applications.

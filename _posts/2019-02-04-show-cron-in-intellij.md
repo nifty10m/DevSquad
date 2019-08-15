@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Display help text for CRON in IntelliJ 
+author-name: Jörg Herbst
+author-avatar: joe
+author-jobtitle: IntelliJ Commander
 ---
 
 Although [cron](https://en.wikipedia.org/wiki/Cron) is originated in the unix world, it is a very common in programming environments. As a typical programmer cron jobs are not my daily business and I am not that good

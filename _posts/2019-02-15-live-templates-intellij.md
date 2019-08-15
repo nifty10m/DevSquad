@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Create Surrounding Live Templates in IntelliJ IDEA
+author-name: Simon Jakubowski
+author-avatar: sja
+author-jobtitle: IntelliJ Evangelist
 ---
 
 To boost your productivity it might be useful to create Custom Live Templates for code you write very often.

@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Run your Java 11 Application on AWS Elastic Beanstalk
+author-name: Simon Jakubowski
+author-avatar: sja
+author-jobtitle: Cloud Baron
 ---
 
 When running Applications on AWS Beanstalk you are limited to the supported "platforms" (see [Supported AWS Plattforms](https://docs.aws.amazon.com/de_de/elasticbeanstalk/latest/dg/concepts.platforms.html)). 

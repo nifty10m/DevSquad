@@ -6,16 +6,20 @@ title: Home of the devsquad team
 <div class="posts">
   {% for post in paginator.posts %}
   <article class="post">
-    <h1 class="post-title">
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
-
+    <h1 class="post-title">{{ post.title }}</h1>
+    <div class="post-subtitle">
+      <div class="avatar">
+        <img class="image" src="/public/img/avatar/{{ post.author-avatar }}.png" alt="avatar {{ post.author }}">
+        <div>
+          <div class="name">{{ post.author-name }}</div>
+          <div class="title">{{ post.author-jobtitle }}</div>
+        </div>
+      </div>
+      <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
+    </div>
     {{ post.content }}
   </article>
+
   {% endfor %}
 </div>
 
