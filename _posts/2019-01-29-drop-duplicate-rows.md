@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Drop duplicate rows in postgresql
+author-name: Jörg Herbst
+author-avatar: joe
+author-jobtitle: Database Guru
 ---
 
 When adding a unique constrain in a postgresql database which is not empty adding the constraint will fail if you have duplicate values. There are multiple solutions to detect the duplicate rows.

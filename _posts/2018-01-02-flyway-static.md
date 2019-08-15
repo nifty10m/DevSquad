@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Flyway only once per testrun
+author-name: Jörg Herbst
+author-avatar: joe
+author-jobtitle: Database Superintendent
 ---
 
 We use [flyway](https://flywaydb.org/) in our setup for creating the database. When running our test suite with `@SpringBootTest` Spring Boot try reusing of the application test. This is not possible if a test suite is annotaded with a dedicated port. In this case Spring Boot is starting a new application context.

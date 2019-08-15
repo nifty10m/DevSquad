@@ -14,24 +14,12 @@ We do out very best to provide solutions for day to day problems. All solutions 
 
 ## Run this page
 
-### Install dependencies
-
-Github pages are built on Jekyll and uses its built-in SCSS compiler to generate our CSS. Before getting started, you'll need to install the required gems from the gemfile:
-
-```bash
-$ bundle
-```
-
 ### Running locally
 
 To see your this site just start a local jekyll server:
 
 ```bash
-$ jekyll serve
-```
-
-or 
-```bash
+$ export LC_ALL="de_DE.UTF-8"
 $ bundle exec jekyll serve
 ```
 

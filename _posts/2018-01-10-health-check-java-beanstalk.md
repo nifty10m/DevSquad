@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Checking JVM health in AWS beanstalk
+author-name: Jörg Herbst
+author-avatar: joe
+author-jobtitle: Cloud Ninja
 ---
 
 We are running a lot of test and production instance on AWS. Most of them use the elastic beanstalk environment for this purpose.

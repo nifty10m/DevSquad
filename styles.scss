@@ -27,3 +27,37 @@
 @import "posts";
 @import "pagination";
 @import "message";
+
+.post-subtitle {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 1rem 0;
+  align-items: center;
+
+  time {
+    display: block;
+  }
+}
+
+.avatar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  .image {
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    margin: 0 20px 0 0;
+  }
+
+  .title {
+    font-size: 12px;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+}
