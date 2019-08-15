@@ -7,10 +7,10 @@ Although [cron](https://en.wikipedia.org/wiki/Cron) is originated in the unix wo
 in remembering those expressions and their meaning. Luckily there is a small IntelliJ plugin which shows the expression as a e tooltip.
 
 So instead of the pure expression you get a human readable text as tooltip
-![Screenshot IntelliJ](/devsquad/public/img/screenshot-cron-intellij.png)
+![Screenshot IntelliJ](/public/img/screenshot-cron-intellij.png)
 
 You can find the plugin here:
-![Screenshot IntelliJ](/devsquad/public/img/cron-plugin-intellij.png)
+![Screenshot IntelliJ](/public/img/cron-plugin-intellij.png)
 
 
 {% include twitter.html %}
