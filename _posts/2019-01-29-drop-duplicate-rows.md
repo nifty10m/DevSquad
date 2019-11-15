@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Drop duplicate rows in postgresql
-author-name: Jörg Herbst
-author-avatar: joe
+author: joe
 author-jobtitle: Database Guru
 ---
 

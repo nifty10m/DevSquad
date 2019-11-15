@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Generating sample data in Java applications
-author-name: Jörg Herbst
-author-avatar: joe
+author: joe
 author-jobtitle: Demo Savant
 ---
 

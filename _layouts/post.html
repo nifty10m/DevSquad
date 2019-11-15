@@ -5,13 +5,16 @@ layout: default
 <article class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   <div class="post-subtitle">
+
     <div class="avatar">
-      <img class="image" src="/public/img/avatar/{{ page.author-avatar }}.png" alt="avatar {{ page.author }}">
+      {% assign staff_member = site.members | where: 'abbrev', page.author | first %}
+      <img class="image" src="/public/img/avatar/{{ staff_member.abbrev }}.png" alt="avatar {{ staff_member.abbrev }}">
       <div>
-        <div class="name">{{ page.author-name }}</div>
-        <div class="title">{{ page.author-jobtitle }}</div>
+        <div class="name">{{ staff_member.name }}</div>
+        <div class="title"><a href="https://github.com/{{ staff_member.github }}">@{{ staff_member.github }}</a> {{ page.author-jobtitle }}</div>
       </div>
     </div>
+
     <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time>
   </div>
   {{ content }}

@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Run your Java 11 Application on AWS Elastic Beanstalk
-author-name: Simon Jakubowski
-author-avatar: sja
+author: sja
 author-jobtitle: Cloud Baron
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: Example content
 author-name: Jörg Herbst
-author-avatar: joe
+author: joe
 author-jobtitle: Backend Developer
 ---
 

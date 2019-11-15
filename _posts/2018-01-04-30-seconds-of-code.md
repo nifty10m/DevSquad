@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Solution for common javascript problems 
-author-name: Jörg Herbst
-author-avatar: joe
+author: joe
 author-jobtitle: JS Enthusiast
 ---
 

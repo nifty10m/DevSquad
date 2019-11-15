@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Create Surrounding Live Templates in IntelliJ IDEA
-author-name: Simon Jakubowski
-author-avatar: sja
+author: sja
 author-jobtitle: IntelliJ Evangelist
 ---
 

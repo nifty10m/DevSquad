@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Checking JVM health in AWS beanstalk
-author-name: Jörg Herbst
-author-avatar: joe
+author: joe
 author-jobtitle: Cloud Ninja
 ---
 

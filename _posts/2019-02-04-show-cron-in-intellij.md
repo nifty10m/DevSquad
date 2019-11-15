@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Display help text for CRON in IntelliJ 
-author-name: Jörg Herbst
-author-avatar: joe
+author: joe
 author-jobtitle: IntelliJ Commander
 ---
 

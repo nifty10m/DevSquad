@@ -12,6 +12,9 @@ pages_list:
    Imprint: 'https://10m.de/imprint'
    Feed: '/atom.xml'
 
+collections:
+  members:
+    output: true
 # Assets
 #
 # We specify the directory for Jekyll so we can use @imports.
