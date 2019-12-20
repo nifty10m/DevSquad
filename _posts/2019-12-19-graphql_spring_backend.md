@@ -5,10 +5,10 @@ author: sja
 author-jobtitle: GraphQL Pioneer
 ---
 
-For an internal Project we wanted to try out a GraphQL-API to experiment with the current State of Technology and to evaluate the 
-Developer Experience in either Front- and Backend.
+For an internal project we wanted to try out a GraphQL-API to experiment with the current state of technology and to evaluate the 
+developer experience in Front- and Backend.
 
-There is a great Project available at [github/graphql-java-kickstart/graphql-spring-boot](https://github.com/graphql-java-kickstart/graphql-spring-boot) which literally kickstarts your first GraphQL-Steps.
+There is a great project available at [github/graphql-java-kickstart/graphql-spring-boot](https://github.com/graphql-java-kickstart/graphql-spring-boot) which literally kickstarts your first GraphQL-Steps.
 
 # Dependencies
 We included the following Dependencies:
@@ -21,7 +21,7 @@ We included the following Dependencies:
 
 which is most of the necessary work before you're able to start writing your GraphQL-Schema.
 
-We also included the following Dependencies to add some more Support:
+We also included the following dependencies to add some more support:
 
 ```groovy
   //Add GraphiQL which adds a Playground-UI where you can write Queries and Mutations to test them  
@@ -60,14 +60,14 @@ type Project {
 }
 ```
 
-On Application start, the default GraphQL Schema Parser will look for the following Methods within all spring-beans Implementing the `com.coxautodev.graphql.tools.GraphQLQueryResolver`-Interface
+On Application start, the default GraphQL-Schema-Parser will look for the following methods within all spring-beans implementing the `com.coxautodev.graphql.tools.GraphQLQueryResolver`-Interface
 * employee(String email)
 * getEmployee(String email)
 
 which fails at this point.
 
 # Query Resolver
-In order to implement the mentioned Query we need to provide a Bean which implements the QueryResolver and provides a method where the name equals the schema.query
+In order to implement the mentioned query we need to provide a bean which implements GraphQLQueryResolver and provides a method where the name equals the schema.query
 
 ```java
 import de.xm.sample.graphql.domain.entities.Employee;
@@ -84,7 +84,6 @@ public class EmployeeQueryResolver implements GraphQLQueryResolver {
 
     private final EmployeeRepository employeeRepository;
 
-    @PreAuthorize("!isAnonymous()") 
     public EmployeeResource employee(String email) {
 
         return new EmployeeResource(employeeRepository.findByEmail(email)
@@ -94,18 +93,18 @@ public class EmployeeQueryResolver implements GraphQLQueryResolver {
 }
 ```
 
-This Query Resolver will take the email and query the database for the employee. If an employee could be found, it will be mapped to a pojo matching the graphQL schema. If the Employee could not be found an Exception will be thrown.
-At this point, we are able to answer the employee Query with Employee-Information. The good thing about graphQL is, that the Client-Developer 
+This QueryResolver will take the email and query the database for the employee. If an employee could be found, it will be mapped to a pojo matching the GraphQL-Schema. If the Employee could not be found an Exception will be thrown.
+At this point, we are able to answer the employee query with Employee-Information. The good thing about GraphQL is, that the Client-Developer 
 is able to decide, which Information is relevant for his UseCase. 
 
-We could now provide ALL the Information we defined in the Schema within this Query or we can use something called a `GraphQLResolver` to load this information when a client asks for it. 
-In our example this would be the `projects(start: LocalDate, end: LocalDate): [Project]!` within the Employee Type.
+We could now provide **ALL** the Information we defined in the Schema within this Query or we can use something called a `GraphQLResolver` to load this information only when a client asks for it. 
+In our example this would be the `projects(start: LocalDate, end: LocalDate): [Project]!` within the Employee-Type.
 
-This will greatly increase the GrapQL-Query Execution Time when the Client is not interested in Project-Information.
+This will greatly increase the GraphQL-Query execution time when the client is not interested in project information.
 
 # GraphQLResolver
-So we defined a some sort of subquery within the Employee Type called `projects(start: LocalDate, end: LocalDate): [Project]!`. 
-Therefore we need to define this Query and `attach` it to the returning Resource of our QueryResolver
+So we defined a some sort of subquery within the Employee-Type called `projects(start: LocalDate, end: LocalDate): [Project]!`. 
+Therefore we need to define this Query and `attach` it to the returning Pojo of our QueryResolver
 
 ```java
 @RequiredArgsConstructor
@@ -123,11 +122,11 @@ public class EmployeeResolver implements GraphQLResolver<EmployeeResource> {
 }
 ```
 
-This Query will only be executed, when the Client asks for project-information and will have no impact otherwise.
+This query will only be executed, when the client asks for project-information and will have no impact otherwise.
 
 # Custom Scalar
-You are able to register Custom Scalre which you can use in your Model (e.g. UUID Scalar). You need to Provide a 
-`graphql.schema.GraphQLScalarType` describing the Mapping from String to the designated Class
+You are able to register custom scalar's which you can use in your Model (e.g. UUID-Scalar). You need to provide a 
+`graphql.schema.GraphQLScalarType` describing the mapping from string to the designated class
 
 ```java
 @Configuration
@@ -181,8 +180,8 @@ public class GraphQlConfiguration {
 ```
 
 # Wrap up
-It is fairly easy to start with a GraphQL Backend. Like most API's the real work lays within defining the Schema. 
-With the [github/graphql-java-kickstart/graphql-spring-boot](https://github.com/graphql-java-kickstart/graphql-spring-boot) 
-you are able to remove most of the complexity of GraphQL for your Team and start working on the actual Business Logic.  
+It is fairly easy to start with a GraphQL-Backend. Like most API's the real work lays within defining the schema. 
+With [github/graphql-java-kickstart/graphql-spring-boot](https://github.com/graphql-java-kickstart/graphql-spring-boot) 
+you are able to remove most of the complexity of GraphQL for your team and start working on the actual Business Logic.  
 
 {% include twitter.html %}
